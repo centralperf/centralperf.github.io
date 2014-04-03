@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Central Perf - Web based load testing and monitoring">
+	    <meta name="author" content="Dominique Clairac, Charles Le Gallic">
+	
+	    <title>Central Perf - "Metrology As A Service"</title>
+	
+	    <!-- Bootstrap core CSS -->
+	    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	
+	    <!-- Custom styles for this template -->
+	    <link href="stylesheets/carousel.css" rel="stylesheet">
+		<style type="text/css" id="holderjs-style"></style>
+		<script src="javascripts/jquery.min.js"></script>
+		<script type="text/javascript">
+			// Load licenses.xml file and transform with XSLT
+			$(document).ready(function(){
+				jsxml.trans('resources/licenses/licenses.xml', 'resources/licenses/licenses.xsl',function(resultString){
+				    $('#server-side-licenses').html(resultString);
+				});
+			}
+			);
+		</script>
+	</head>
+
+	<body>
+
+		<!-- NAVBAR
+		================================================== -->
+
+        <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-header" href="#" style="padding-top:5px"><!-- <img src="resources/img/logo-40_150.png" width="125" height="40" alt="Central Perf Logo">--></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#" class="active">About</a></li>
+                <li><a href="http://github.com/centralperf/centralperf/">Project page on GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+	<div class="container">
+        <h1>Authors</h1>
+        <div class="row">
+			<div class="media col-md-6">
+			    <img class="media-object pull-left" src="http://www.gravatar.com/avatar/nope" alt="Dominique Clairac">
+			  <div class="media-body">
+			    <h4 class="media-heading">Dominique CLAIRAC</h4>
+			    ...
+			  </div>
+			</div>
+			<div class="media col-md-6" style="margin-top:0px">
+			  <a class="pull-left" href="http://www.amoae.com">
+			    <img class="media-object" src="http://www.gravatar.com/avatar/1c0003c88b48251d9e555e125162058a" alt="Charles Le Gallic">
+			  </a>
+			  <div class="media-body">
+			    <h4 class="media-heading">Charles LE GALLIC</h4>
+			    Founder of <a href="http://www.amoae.com">AMOAE</a> in february 2012, a french IT consulting company, Charles is an IT consultant since 2002, but coding is still one of it's favorite hobby.
+			  </div>
+			</div> 
+		</div>
+		<div class="row" style="margin-top:50px;margin-bottom:50px;">
+			<div class="media col-md-6">
+			  <a class="pull-left" href="http://www.amoae.com">
+			    <img class="media-object" src="resources/img/unknown-user-80x80.png" alt="You ?">
+			  </a>
+			  <div class="media-body">
+			    <h4 class="media-heading">You ?</h4>
+			    As Central Perf is a Free Software, Open Source project, you can join to help us improve it, make suggestions, build plugins for injectors....
+			  </div>
+			</div>	
+			<div class="media col-md-6">
+			</div>
+				
+		</div>
+	
+        <h1>Third party licenses</h1>
+        <h2>Client side</h2>
+		<div id="client-side-licenses">
+			<ul>
+				<li>
+					Bootstrap <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+				<li>
+					Jquery <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+				<li>
+					X-Editable<a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+				<li>
+					Bootstrap Select<a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+				<li>
+					jQuery Simple Modal <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+				<li>
+					jsTree <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>			
+				<li>
+					moment.js <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a>
+				</li>
+			</ul>
+		</div>
+		<h2>Server side</h2>
+        <div id="server-side-licenses">
+        	Loading...
+        </div>
+        <h2>Others</h2>
+        <div id="others-licenses">
+			<ul>
+				<li>
+					jMeter <a href="http://www.apache.org/licenses/">MIT</a>
+				</li>
+				<li>
+					Gatling <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache v2.0</a>
+				</li>
+				<li>
+					Tomcat <a href="http://www.apache.org/licenses/">Apache</a>
+				</li>
+			</ul>        
+        </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>© 2014 Central Perf Team<br/>
+		Code licenced under the <a href="http://www.gnu.org/licenses/agpl-3.0.html">AGPL licence</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/docs.min.js"></script>
+	<script src="javascripts/jsxml.js"></script>
+
+</body>
+</html>

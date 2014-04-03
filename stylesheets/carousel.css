@@ -22,6 +22,29 @@ body {
   z-index: 20;
 }
 
+.navbar-inverse{
+	background-color: #00B0F0;
+}
+
+.navbar-fixed-top {
+	border-width: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a.active{
+	background-color: #FFF;
+	color: #00B0F0;
+}
+
+.navbar a.active, .navbar a.active:hover, .navbar a.active:focus{
+	background-color: #00B0F0;
+	color: #FFF;
+}
+
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
   padding-right: 0;
@@ -57,7 +80,13 @@ body {
   margin-right: auto 
 }
 
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0) 100%);
+ }
 
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.25) 100%);
+ }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
